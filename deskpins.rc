@@ -1,0 +1,28 @@
+1 ICON "res/app.ico"
+2 CURSOR "res/placepin.cur"
+3 CURSOR "res/removepin.cur"
+1 24 "deskpins.manifest"
+
+1 VERSIONINFO
+FILEVERSION 2,0,0,0
+PRODUCTVERSION 2,0,0,0
+FILEOS 0x40004
+FILETYPE 1
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "FileDescription", "DeskPins"
+      VALUE "ProductName", "DeskPins"
+      VALUE "FileVersion", "2.0.0"
+      VALUE "ProductVersion", "2.0.0"
+      VALUE "OriginalFilename", "DeskPins.exe"
+      VALUE "LegalCopyright", "MIT. Based on DeskPins by Elias Fotinis"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END

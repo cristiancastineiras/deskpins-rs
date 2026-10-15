@@ -1,0 +1,4 @@
+# Hybrid CRT: vcruntime linked statically, UCRT taken from Windows (built into Win10+).
+# No VC++ redistributable needed, and the exe stays small.
+[target.'cfg(all(windows, target_env = "msvc"))']
+rustflags = ["-C", "target-feature=+crt-static", "-C", "link-args=/NODEFAULTLIB:libucrt.lib /DEFAULTLIB:ucrt.lib"]
